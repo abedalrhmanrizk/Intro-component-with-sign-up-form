@@ -190,6 +190,9 @@ form p span {
   .heading-description {
     text-align: start;
   }
+  form {
+    padding: 40px;
+  }
 
   form .input-wrapper {
     margin-bottom: 20px;
