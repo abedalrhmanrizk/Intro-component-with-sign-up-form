@@ -25,7 +25,7 @@ const validateEmail = () => {
 
   if (!isValidEmail(emailValue) && emailValue !== '') {
     emailMessage.textContent = 'Looks like this is not an email';
-    emailIcon.classList.add('fa-solid');
+    emailIcon.className = 'fa-circle-info fa-solid';
   }
 };
 
@@ -34,10 +34,10 @@ function validateEmptyInputs() {
     if (input.value === '') {
       spans[i].textContent = `${input.placeholder} cannot be empty`;
       spans[i].style.display = 'block';
-      icons[i].classList.add('fa-solid');
+      icons[i].className = 'fa-circle-info fa-solid';
     } else {
       spans[i].textContent = '';
-      icons[i].classList.remove('fa-solid');
+      icons[i].className = '';
     }
   });
 }
